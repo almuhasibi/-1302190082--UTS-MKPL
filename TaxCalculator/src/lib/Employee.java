@@ -44,35 +44,35 @@ public class Employee {
     public Employee(String firstName2, String lastName2, String employeeId2, String address2, String foreigner) {
     }
 
-    public String getEmployeeId() { // Getter For id Employe
+    public String getEmployeeId() { 
 		return employeeId;
 	}
 
-	public String getFirstName() { // Getter FristNamr
+	public String getFirstName() { 
 		return firstName;
 	}
 
-	public String getLastName() { // Getter Last Name
+	public String getLastName() { 
 		return lastName;
 	}
 
-	public String getIdNumber() { // Getter Id Number
+	public String getIdNumber() { 
 		return idNumber;
 	}
 
-	public String getAddress() { //getter Address 
+	public String getAddress() { 
 		return address;
 	}
 
-	public boolean isForeigner() { // Gett is Foreign
+	public boolean isForeigner() {
 		return isForeigner;
 	}
 
-	public Gender getGender() { //Getter For Gender
+	public Gender getGender() { 
 		return gender;
 	}
 
-	public String getForeigner() { //Getter For Foreigner
+	public String getForeigner() { 
 		return null;
 	}
 }
