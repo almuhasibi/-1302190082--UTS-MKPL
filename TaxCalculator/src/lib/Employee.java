@@ -10,15 +10,11 @@ public class Employee {
 	private boolean isForeigner;
 
 
-	public Employee(boolean isForeigner) {
-		this.isForeigner = isForeigner;
-	}
 
-	public  enum Gender {
+	public  enum Gender { // Primitive Obsession Bad Smell convert to enumerasi 
 		laki_laki,
 		perempuan,
 	}
-	protected Gender gender; // condition [true = Laki-laki, false = Perempuan]
 
 
 	public Employee(
@@ -27,8 +23,8 @@ public class Employee {
 			String lastName,
 			String idNumber,
 			String address,
-			boolean isForeigner,
-			Gender Gender
+			boolean isForeigner, // Primitive Obsession Bad Smell convert with enumerasi 
+			Gender Gender // Primitive Obsession Bad Smell convert with enumerasi 
 		) {
 			this.employeeId = employeeId;
 			this.firstName = firstName;
@@ -37,13 +33,17 @@ public class Employee {
 			this.address = address;
 			this.isForeigner = isForeigner;
 		}
-
+	public Gender getGender() {
+		return null;		
+	}
 	public Employee(String firstName2, String lastName2, String employeeId2, String address2, String foreigner, Gender gender2) {
     }
 
     public Employee(String firstName2, String lastName2, String employeeId2, String address2, String foreigner) {
     }
-
+	public Employee(boolean isForeigner) {
+		this.isForeigner = isForeigner;
+	}
     public String getEmployeeId() { 
 		return employeeId;
 	}
@@ -66,10 +66,6 @@ public class Employee {
 
 	public boolean isForeigner() {
 		return isForeigner;
-	}
-
-	public Gender getGender() { 
-		return gender;
 	}
 
 	public String getForeigner() { 
