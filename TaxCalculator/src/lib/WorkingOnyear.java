@@ -6,8 +6,8 @@ public class WorkingOnyear extends Employee {
     private static final int TotalChildrens = 0;
     private int join;
     private int onYear;
-    private int dateYearJoin;
-    private int dateMonthJoin;
+    private int dateYearJoin; // Primitive obsession
+    private int dateMonthJoin; // Primitive obsession
     EmployeeSalary salary;
     Family Family;
 
