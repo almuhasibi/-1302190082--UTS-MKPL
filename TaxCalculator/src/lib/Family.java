@@ -40,7 +40,4 @@ public class Family extends Employee {
     public List<String> getChildIdNumber(){
         return TotalChildrens;
     }
-    
-
-
 }
