@@ -22,6 +22,7 @@ public class EmployeeSalary extends Employee{
 			monthSalary = 7000000;
 			foreignerSalary(monthSalary);
 		}
+        
 	}
 
     public int getMonthSalary(){ 
