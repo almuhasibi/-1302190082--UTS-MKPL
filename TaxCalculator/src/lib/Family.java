@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.LinkedList;
 
 public class Family extends Employee {
-    private String spouseName;
-	private String spouseIdNumber;
+    private String FamilyName;
+	private String FamilyIdNumber;
     private List<String> childNames;
 	private List<String> TotalChildrens;
     
@@ -17,27 +17,26 @@ public class Family extends Employee {
 		TotalChildrens = new LinkedList<String>();
     }
 
-    public void setSpouseName(String spouseName){
-        this.spouseName = spouseName;
+    public void setFamilyName(String FamilyName){ // Setn Name of Family
+        this.FamilyName = FamilyName;
     }
-    public void setSpouseNumber(String spouseIdNumber){
-        this.spouseIdNumber = super.getEmployeeId();
+    public void setFamilyNumber(String FamilyIdNumber){ // set Family
+        this.FamilyIdNumber = super.getEmployeeId();
     }
 
 
-    public void addChild(String childName, String childIdNumber){
+    public void addChild(String childName, String childIdNumber){ // add child
         childNames.add(childName);
-        TotalChildrens.add(childIdNumber);
     }
 
-    public String getSpouseName(){
-        return spouseName;
+    public String getFamilyName(){ // Get Family Name
+        return FamilyName;
     }
-    public String getSpouseNumber(){
-        return spouseIdNumber;
+    public String getFamilyNumber(){ //get fam number
+        return FamilyIdNumber;
     }
 
-    public List<String> getChildIdNumber(){
+    public List<String> getChildIdNumber(){ // Geth child number
         return TotalChildrens;
     }
 }

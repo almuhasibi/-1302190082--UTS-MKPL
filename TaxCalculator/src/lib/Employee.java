@@ -44,31 +44,30 @@ public class Employee {
 	public Employee(boolean isForeigner) {
 		this.isForeigner = isForeigner;
 	}
-    public String getEmployeeId() { 
+	public String getEmployeeId() { // Getter For id Employe
 		return employeeId;
 	}
 
-	public String getFirstName() { 
+	public String getFirstName() { // Getter FristNamr
 		return firstName;
 	}
 
-	public String getLastName() { 
+	public String getLastName() { // Getter Last Name
 		return lastName;
 	}
 
-	public String getIdNumber() { 
+	public String getIdNumber() { // Getter Id Number
 		return idNumber;
 	}
 
-	public String getAddress() { 
+	public String getAddress() { //getter Address 
 		return address;
 	}
 
-	public boolean isForeigner() {
+	public boolean isForeigner() { // Gett is Foreign
 		return isForeigner;
 	}
-
-	public String getForeigner() { 
+	public String getForeigner() { //Getter For Foreigner
 		return null;
 	}
 }
