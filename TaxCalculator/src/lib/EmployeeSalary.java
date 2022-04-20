@@ -11,7 +11,7 @@ public class EmployeeSalary extends Employee{
         worker.getAddress(), worker.getForeigner(), worker.getGender());
     }
 
-    public void setmonthSalary(int grade) {	
+    public void setmonthSalary(int grade) {	 // method Sett Month Sallary
 		if (grade == 1) {
 			monthSalary = 3000000;
 			foreignerSalary(monthSalary);
@@ -25,29 +25,29 @@ public class EmployeeSalary extends Employee{
         
 	}
 
-    public int getMonthSalary(){ 
+    public int getMonthSalary(){  //Getter month Sallary
         return monthSalary;
     }
  
-    public void foreignerSalary(int monthSalary){ 
+    public void foreignerSalary(int monthSalary){  
         if (!super.isForeigner()) {
             monthSalary = (int) (monthSalary + (monthSalary * 0.5));
         }
     }
 	
-	public void setAnnualDeductible(int deductible) {
+	public void setAnnualDeductible(int deductible) { //Setter Anual Deductible
 		this.annualDeductible = deductible;
 	}
 	
-	public void setAdditionalIncome(int income) {	 
+	public void setAdditionalIncome(int income) {	 //Set Income Adds 
 		this.otherMonthlyIncome = income;
 	}
 
-    public int getAnnualDeductible(){ 
+    public int getAnnualDeductible(){  //Getter Anual Deductible
         return annualDeductible;
     }
 
-    public int getAddtionalIncome(){
+    public int getAddtionalIncome(){ //Getter Income Adds
         return otherMonthlyIncome;
     }
 }
